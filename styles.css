@@ -1,17 +1,73 @@
-/*this is my style page*/
+/* this is my style page */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f7fb;
     margin: 30px;
     color: #222222;
+
+    /* STEP 2: Background image for the website */
+    background-image: url("images/cybersecurity-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1 {
     color: #0b4f6c;
     border-bottom: 2px solid #0b4f6c;
     padding-bottom: 8px;
+
+    /* STEP 2: Text effect */
+    text-shadow: 2px 2px 4px #b7c9d6;
 }
 
 a {
     color: #0066cc;
+}
+
+/* CLASS: Used by the <div> tag that holds the main home page content. */
+.content-box {
+    background-color: rgba(255, 255, 255, 0.92);
+    border: 1px solid #b7c9d6;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* CLASS: Used by the <h2> tag under the main heading. */
+.subtitle {
+    color: #136198;
+}
+
+/* CLASS: Used by the <img> tag for the cybersecurity workstation image. */
+.workspace-image {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #0b4f6c;
+    border-radius: 8px;
+}
+
+/* ID: Used by the <nav> tag for the main navigation menu. */
+#main-nav {
+    background-color: rgba(255, 255, 255, 0.92);
+    border: 1px solid #b7c9d6;
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#main-nav a {
+    margin: 0 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ID: Used by the main <h1> tag on the home page. */
+#main-title {
+    text-align: center;
+    font-size: 32px;
 }
