@@ -26,6 +26,17 @@ a {
     color: #0066cc;
 }
 
+a:visited
+{
+    color: #5b4a8b;
+}
+
+a:hover
+{
+    color: #0b4f6c;
+    text-decoration: underline;
+}
+
 /* CLASS: Used by the <div> tag that holds the main home page content. */
 .content-box {
     background-color: rgba(255, 255, 255, 0.92);
