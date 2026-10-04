@@ -1,60 +1,82 @@
-/* this is my style page */
+/* Christine's IT Support Services - Responsive Styles */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f7fb;
-    margin: 30px;
+    margin: 0;
+    padding: 30px;
     color: #222222;
+    text-align: center;
 
-    /* STEP 2: Background image for the website */
+    /* Background image for the website */
     background-image: url("images/cybersecurity-background.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+    min-height: 100vh;
+}
+
+header,
+main,
+footer {
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
     color: #0b4f6c;
     border-bottom: 2px solid #0b4f6c;
     padding-bottom: 8px;
-
-    /* STEP 2: Text effect */
     text-shadow: 2px 2px 4px #b7c9d6;
+}
+
+h2,
+h3 {
+    color: #136198;
+}
+
+p {
+    line-height: 1.6;
 }
 
 a {
     color: #0066cc;
 }
 
-a:visited
-{
+a:visited {
     color: #5b4a8b;
 }
 
-a:hover
-{
+a:hover,
+a:focus {
     color: #0b4f6c;
     text-decoration: underline;
 }
 
-/* CLASS: Used by the <div> tag that holds the main home page content. */
+/* Main content card used on every page. */
 .content-box {
     background-color: rgba(255, 255, 255, 0.92);
     border: 1px solid #b7c9d6;
     border-radius: 8px;
-    padding: 20px;
+    padding: 24px;
     margin-top: 20px;
 }
 
-/* CLASS: Used by the <h2> tag under the main heading. */
 .subtitle {
     color: #136198;
 }
 
-/* CLASS: Used by the <img> tag for the cybersecurity workstation image. */
+/* Picture is sized with a percentage for responsiveness. */
 .workspace-image {
-    width: 600px;
-    max-width: 100%;
+    width: 70%;
+    max-width: 700px;
     height: auto;
     display: block;
     margin: 20px auto;
@@ -62,23 +84,143 @@ a:hover
     border-radius: 8px;
 }
 
-/* ID: Used by the <nav> tag for the main navigation menu. */
+/* Consistent navigation on every page. */
 #main-nav {
     background-color: rgba(255, 255, 255, 0.92);
     border: 1px solid #b7c9d6;
     padding: 12px;
     text-align: center;
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 #main-nav a {
-    margin: 0 10px;
+    display: block;
+    padding: 10px 14px;
     font-weight: bold;
     text-decoration: none;
+    border-radius: 6px;
 }
 
-/* ID: Used by the main <h1> tag on the home page. */
+#main-nav a:hover,
+#main-nav a:focus {
+    background-color: #e2f1fb;
+}
+
 #main-title {
     text-align: center;
     font-size: 32px;
+}
+
+.center-list {
+    list-style-position: inside;
+    padding-left: 0;
+    margin: 16px auto;
+    line-height: 1.8;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #0b4f6c;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.button-link:visited {
+    color: #ffffff;
+}
+
+.button-link:hover,
+.button-link:focus {
+    background-color: #136198;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 12px;
+    color: #0b4f6c;
+    font-size: 0.9rem;
+}
+
+/* BREAKPOINT 1: Tablets and smaller screens */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 18px;
+        background-attachment: scroll;
+    }
+
+    header,
+    main,
+    footer {
+        width: 95%;
+    }
+
+    #main-title,
+    h1 {
+        font-size: 28px;
+    }
+
+    .workspace-image {
+        width: 85%;
+    }
+
+    #main-nav {
+        gap: 6px;
+    }
+
+    #main-nav a {
+        padding: 9px 12px;
+    }
+}
+
+/* BREAKPOINT 2: Phones */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header,
+    main,
+    footer {
+        width: 100%;
+    }
+
+    .content-box {
+        padding: 16px;
+        margin-top: 12px;
+    }
+
+    #main-title,
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .workspace-image {
+        width: 100%;
+    }
+
+    #main-nav {
+        flex-direction: column;
+        width: 100%;
+        padding: 8px;
+    }
+
+    #main-nav a {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
 }

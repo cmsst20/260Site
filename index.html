@@ -1,60 +1,56 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <link href="styles.css" rel="stylesheet">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
     <title>Christine's IT Support Services</title>
 </head>
 <body>
-    <!-- STEP 1: This nav tag uses the main-nav ID -->
-    <nav id="main-nav">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="Security.html">Cybersecurity</a>
-        <a href="Contact.html">Contact</a>
-    </nav>
+    <header>
+        <nav id="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="Security.html">Cybersecurity</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
 
-    <!-- STEP 1: This div uses the content-box class -->
-    <div class="content-box">
+    <main class="content-box">
+        <section>
+            <h1 id="main-title">Welcome to Christine's IT Support Services!</h1>
+            <h2 class="subtitle">We're here to help!</h2>
 
-        <!-- STEP 1: This h1 uses the main-title ID -->
-        <h1 id="main-title">Welcome to Christine's IT Support Services!</h1>
+            <p>
+                Welcome to Christine's IT Support Services! This website is designed
+                to provide helpful information and support for common computer and technology problems.
+                Whether you need help troubleshooting a computer, connecting to the internet,
+                protecting your accounts, or learning more about technology, Christine's IT Support
+                Services is here to help.
+            </p>
 
-        <!-- STEP 1: This h2 uses the subtitle class -->
-        <h2 class="subtitle">We're here to help!</h2>
+            <img
+                src="images/cybersecurity-workspace.jpg"
+                alt="Cybersecurity workstation with a laptop displaying a security dashboard"
+                class="workspace-image"
+            >
+        </section>
 
-        <!-- This section introduces visitors to the business -->
-        <p style="color: #0f0f0f">
-            Welcome to Christine's IT Support Services! This website is designed
-            to provide helpful information and support for common computer and technology problems. <br>
-            Whether you need help troubleshooting a computer,
-            connecting to the internet, protecting your accounts, or learning more
-            about technology, Christine's IT Support Services is here to help.
-        </p>
+        <section>
+            <hr>
+            <h3>Want a better understanding of cybersecurity and how it can benefit you?</h3>
+            <p>
+                Visit the resource below to learn more about keeping your computer
+                and information secure.
+            </p>
+            <a class="button-link" href="https://www.cisa.gov/" target="_blank" rel="noopener noreferrer">
+                Visit the CISA Cybersecurity Website
+            </a>
+        </section>
+    </main>
 
-        <!-- STEP 2: Properly named and sized image with alt text for accessibility -->
-        <img
-            src="images/cybersecurity-workspace.jpg"
-            alt="Cybersecurity workstation with a laptop displaying a security dashboard"
-            class="workspace-image"
-        >
-
-        <!-- This section provides a link to anyone who wants to learn about cybersecurity -->
-        <hr>
-
-        <h3>Want a better understanding of cybersecurity and how it can benefit you?</h3>
-
-        <p>
-            Visit the resources below to learn more about keeping your computer
-            and information secure.
-        </p>
-
-        <a href="https://www.cisa.gov/" target="_blank">
-            Visit the CISA Cybersecurity Website
-        </a>
-    </div>
-
+    <footer>
+        <p>Christine's IT Support Services</p>
+    </footer>
 </body>
 </html>
